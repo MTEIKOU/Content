@@ -2,10 +2,22 @@ body {
 	background-color: #ccc;
 }
 
+.hello {
+    text-align:center;
+}
+
 .index {
 	background-color: #FFF;
 }
 
-.blue{
+.public {
+    background-color: #999999;
+}
+
+.app{
 	background-color: #9FF;
 	}
+
+.cat {
+    background-color: #FFFFFF;
+}
