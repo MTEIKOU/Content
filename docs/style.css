@@ -2,27 +2,40 @@ body {
 	background-color: #ccc;
 }
 
+.hello img {
+    vertical-align: middle;
+}
+
 .hello {
-    text-align:center;
+    text-align: center;
+    display:inline;
+    vertical-align: middle;
 }
 
 .index {
 	background-color: #FFF;
 }
 
+.indent {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    text-indent: -0.5em;
+}
+
+.imgindent {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
 .public {
-    background-color: #999999;
+    background-color: #CCFFFF;
 }
 
 .app {
-    background-color: #9FF;
+    background-color: #9999CC;
 }
 
 .img {
     max-width: 640px;
-    min-width: 320px;
-}
-
-.cat {
-    background-color: #FFFFFF;
 }
