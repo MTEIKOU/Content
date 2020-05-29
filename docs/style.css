@@ -14,9 +14,14 @@ body {
     background-color: #999999;
 }
 
-.app{
-	background-color: #9FF;
-	}
+.app {
+    background-color: #9FF;
+}
+
+.img {
+    max-width: 640px;
+    min-width: 320px;
+}
 
 .cat {
     background-color: #FFFFFF;
