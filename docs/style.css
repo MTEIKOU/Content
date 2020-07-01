@@ -1,41 +1,94 @@
-body {
-	background-color: #ccc;
+
+@media screen and (max-width:1080px) {
+    /*âÊñ ïùÇ™1080pxà»â∫ÇÃéû*/
+
+    body {
+        background-color: #ccc;
+    }
+
+    .hello img {
+        vertical-align: middle;
+    }
+
+    .hello {
+        text-align: center;
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .index {
+        background-color: #FFF;
+    }
+
+    .indent {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em;
+        text-indent: -0.5em;
+    }
+
+    .imgindent {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .public {
+        background-color: #CCFFFF;
+    }
+
+    .app {
+        background-color: #9999CC;
+    }
+
+    .img {
+        width: 90vw;
+    }
 }
 
-.hello img {
-    vertical-align: middle;
-}
 
-.hello {
-    text-align: center;
-    display:inline;
-    vertical-align: middle;
-}
 
-.index {
-	background-color: #FFF;
-}
+@media screen and (min-width:1081px) {
+    /*âÊñ ïùÇ™1081pxà»è„ÇÃéû*/
 
-.indent {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0.5em;
-    text-indent: -0.5em;
-}
+    body {
+        background-color: #ccc;
+    }
 
-.imgindent {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
+    .hello img {
+        vertical-align: middle;
+    }
 
-.public {
-    background-color: #CCFFFF;
-}
+    .hello {
+        text-align: center;
+        display: inline;
+        vertical-align: middle;
+    }
 
-.app {
-    background-color: #9999CC;
-}
+    .index {
+        background-color: #FFF;
+    }
 
-.img {
-    max-width: 640px;
+    .indent {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em;
+        text-indent: -0.5em;
+    }
+
+    .imgindent {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .public {
+        background-color: #CCFFFF;
+    }
+
+    .app {
+        background-color: #9999CC;
+    }
+
+    .img {
+        width: 50vw;
+    }
 }
