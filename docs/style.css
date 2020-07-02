@@ -6,13 +6,26 @@
         background-color: #ccc;
     }
 
+    
+    ul {
+        list-style-type: none; /*箇条書きのポッチを消す*/
+        text-align: center /*左右中央寄せは親要素に対して指定*/
+    }
+
     .hello img {
-        vertical-align: middle;
+        display: inline;
+        
     }
 
     .hello {
         text-align: center;
-        display: inline;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .inline {
+        text-align: center;
+        display: inline-block;
         vertical-align: middle;
     }
 
@@ -23,13 +36,18 @@
     .indent {
         padding-left: 0.5em;
         padding-right: 0.5em;
+    }
+
+    .bottomindent {
         padding-bottom: 0.5em;
+    }
+
+    .textindent {
         text-indent: -0.5em;
     }
 
     .imgindent {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+       
     }
 
     .public {
@@ -41,7 +59,15 @@
     }
 
     .img {
-        width: 90vw;
+        
+    }
+
+    .center{
+        text-align:center;
+    }
+
+    .margin {
+        margin: 0;
     }
 }
 
@@ -54,12 +80,18 @@
         background-color: #ccc;
     }
 
+    nav ul {
+        list-style-type: none; /*箇条書きのポッチを消す*/
+        text-align: center /*左右中央寄せは親要素に対して指定*/
+    }
+
     .hello img {
         vertical-align: middle;
     }
 
-    .hello {
+     .hello {
         text-align: center;
+        padding: 0;
         display: inline;
         vertical-align: middle;
     }
@@ -71,13 +103,17 @@
     .indent {
         padding-left: 0.5em;
         padding-right: 0.5em;
+    }
+
+    .bottomindent {
         padding-bottom: 0.5em;
+    }
+
+    .textindent {
         text-indent: -0.5em;
     }
 
     .imgindent {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
     }
 
     .public {
@@ -89,6 +125,14 @@
     }
 
     .img {
-        width: 50vw;
+        max-width: 50vw;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .margin{
+        margin: 0;
     }
 }
