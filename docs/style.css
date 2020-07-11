@@ -69,6 +69,12 @@
     .margin {
         margin: 0;
     }
+
+ .pad{
+ margin-left :10px;
+margin-right:10px
+}
+
 }
 
 
@@ -135,4 +141,9 @@
     .margin{
         margin: 0;
     }
+
+ .pad{
+margin-left :10px;
+margin-right:10px
+}
 }
