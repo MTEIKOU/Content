@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arduino作品紹介</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- IE�p�ݒ� -->
+  <meta name="robots" content="noindex,nofollow" /> <!-- ����NG -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" /> <!-- �X�}�z�p -->
+</head>
+
+<body>
+  <h1>Arduino作品紹介</h1>
+  <p>
+    <img src="works/LCDTime.jpg" alt="LCD">
+    <span class="h3">LCDに日付・時間表示</span>
+  </p>
+
+  <p>
+    <img src="works/LCD_I2C.jpg" alt="LCD(I2C)">
+    <span class="h3">LCD(I2Cバージョン)</span>
+  </p>
+
+  <p>
+    <video src="works/ColorLED.mp4" controls></video>
+    <span class="h3">フルカラーLEDの制御</span>
+  </p>
+
+  <div>
+    <video src="works/Organ.mp4" controls></video>
+    <span class="h3">分圧回路を利用した電子オルガン（LED付）</span>
+
+    <details>
+      <summary>配線図</summary>
+      <img src="works/Organ2.PNG" alt="オルガン">
+    </details>
+
+    <details>
+      <summary>ソースコード</summary>
+      <pre>
+        <code>
+          <!--
+          //#include &lt;Suwano.h&gt;
+
+          //入力レベル設定
+
+          //suwano LEDなし
+          //int level[]={
+          //  0,510,680,767,819,853,878,896};
+
+          //suwano LEDあり
+          //  int level[]={
+          //  377,695,802,856,889,911,927,939};
+
+          //tinkercad シミュレーション
+          int level[]={
+          404,708,811,863,894,916,931,942};
+
+          int tonearg[]={
+          262,294,330,349,392,440,494,523};
+          int n;
+        -->
+        void setup() {
+          Serial.begin(9600);
+        }
+
+        void loop() {
+
+          int a = analogRead(0);
+          Serial.println(a);
+
+          if(a>1020){
+            noTone(9);
+          }
+
+          else{
+            for(n=0;n&lt;8;n++){
+              if(level[n]-3 &lt; a &amp;&amp; level[n]+3 &gt; a) //±2
+              {
+                tone(9,tonearg[n],100);
+              }
+            }
+          }
+        }
+      </code>
+    </pre>
+  </details>
+</div>
+
+<div><a href="index.html">戻る</div>
+
+</body>
+</html>
