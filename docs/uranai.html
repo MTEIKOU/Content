@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>占いコーナー</title>
+  <style>
+  p{font-size: 4em; font-weight: bold; text-align: center;}
+  div{font-size: 2em; text-align: center;}
+  </style>
+  <script type="text/javascript">
+
+  function setColor(){
+
+    var n =  Math.floor(Math.random() * 5);
+    var x =  Math.floor(Math.random() * 256);
+    var y =  Math.floor(Math.random() * 256);
+    var z =  Math.floor(Math.random() * 256);
+
+    var newcolor = "rgb("+ x +","+ y +","+ z+")";
+    var button = document.getElementById("button");
+
+    var result = "";
+    switch (n) {
+      case 0:
+      result = "大吉";
+      document.getElementById("result").style.color="red";
+      break;
+      case 1:
+      result = "中吉";
+      document.getElementById("result").style.color="orange";
+      break;
+      case 2:
+      result = "小吉";
+      document.getElementById("result").style.color="yellow";
+      break;
+      case 3:
+      result = "凶";
+      document.getElementById("result").style.color="lightblue";
+      break;
+      case 4:
+      result = "大凶";
+      document.getElementById("result").style.color="blue";
+      break;
+      default:console.log(n);break;
+
+    }
+    button.style.backgroundColor = newcolor;
+    button.innerHTML = "";
+    var to16 = ('00' + x.toString(16).toUpperCase()).slice(-2) + ('00' + y.toString(16).toUpperCase()).slice(-2) + ('00' + z.toString(16).toUpperCase()).slice(-2)
+    document.getElementById("text").innerText = newcolor + "  #" +to16;
+    document.getElementById("result").innerHTML = result;
+    document.getElementById("koreda").innerText = "ラッキーカラーはこれだ！";
+  }
+
+  </script>
+</head>
+<body>
+  <p><span id="result">今日の運勢は？</span></p>
+  <div><span id="koreda"></span></div>
+  <div><button id="button" style="width:500px; height:200px" onclick="setColor()">占う</button></div>
+  <div><span id="text">ボタンをクリック！</span></div>
+</body>
+</head>
+</html>
