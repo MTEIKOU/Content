@@ -15,6 +15,7 @@ video{
   height: 100%;
 }
 
+.margin{margin: 2%;}
 .pre {white-space: pre-line;}
 
 .index {background-color: #FFF;}
