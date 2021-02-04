@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Canvas tutorial</title>
+  <script type="text/javascript">
+
+  var tate=50;
+  var yoko=50;
+  var speed=3;
+  var r=0;
+  var temp=0;
+  function draw() {
+
+    var canvas = document.getElementById('canvas');
+    if (canvas.getContext) {
+
+
+      var ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.beginPath();
+
+      for(var deg=0; deg<r; deg++){
+        var rad = (Math.PI/180 * deg);
+        var x = 200+ tate*(deg-r)/360*(Math.sin(rad));
+        var y = 200+yoko*(deg-r)/360*(Math.cos(rad));
+        if(x>-10 && x<canvas.width+10 && y>-10 && y<canvas.height+10)
+        ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+    }
+    r+=speed;
+    if(r<0){;r=0;}
+    document.getElementById('para').innerHTML="v:"+tate+" h:"+yoko+" s:"+speed+" r:"+r +" temp:"+temp ;
+  }
+
+  setInterval( function () {
+
+    draw() ;
+  }, 10 ) ;
+
+  function reset(){
+    if(document.getElementById( "tate" ).value == 0){tate=10;}
+    else{tate = document.getElementById( "tate" ).value ;}
+    if(document.getElementById( "yoko" ).value == 0){yoko=10;}
+    else{yoko = document.getElementById( "yoko" ).value ;}
+
+    r=0;
+  }
+
+  function down(){
+    speed--;
+  }
+
+  function up(){
+    speed++;
+  }
+
+  function stop(){
+    if(speed!=0){temp=speed;}
+    if(speed!=0){
+      speed=0;
+      document.getElementById('pause').value="再開";
+    }
+      else{
+        speed=temp;
+        document.getElementById('pause').value="停止";
+      }
+
+    }
+
+    </script>
+    <style type="text/css">
+    canvas { border: 1px solid black; }
+    </style>
+  </head>
+  <body onload="draw();">
+    <canvas id="canvas" width="400" height="400"></canvas><br>
+    <label>縦幅：<input type="text" id="tate" size="2"></label>
+    <label>横幅：<input type="text" id="yoko" size="2"></label>
+
+    <input type="button" value="リセット" onclick="reset()">
+    <input type="button" id='pause' value="停止" onclick="stop()">
+
+    <div>
+      <input type="button" value="Speed Down" onclick="down()">
+      <input type="button" value="Speed Up" onclick="up()">
+    </div>
+
+    <div id='para'></div>
+  </body>
+  </html>
