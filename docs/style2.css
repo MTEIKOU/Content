@@ -1,0 +1,25 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 31%;
+  margin: 1%;
+  background-color: #399;
+}
+
+.img ,.text{    margin: 10px;}
+.img {
+  text-align: center;
+}
+
+img {
+  border: 1px solid white;
+  max-height: 100px;
+  max-width:100%;
+}
+
+.pre {white-space: pre-line; font-size:0.8em;}
+.title{font-weight: bold;}
+.text{  background-color: #399;}
