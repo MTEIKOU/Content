@@ -1,0 +1,33 @@
+body {
+  background-color: #ccc;
+}
+
+/* ".orig" クラス以外の <img> 要素 */
+img:not(.orig) {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+video{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.margin{margin: 2%;}
+.pre {white-space: pre-line;}
+
+.index {background-color: #FFF;}
+.app {background-color: #9999CC;}
+
+.h1{font-size: 2rem; font-weight: bold;}
+.h2{font-size: 1.5rem; font-weight: bold;}
+.h3{font-size: 1.2rem; font-weight: bold;}
+.red{color:red;}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

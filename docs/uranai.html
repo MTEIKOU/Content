@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>占いコーナー</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
   p{font-size: 4em; font-weight: bold; text-align: center;}
   div{font-size: 2em; text-align: center;}
@@ -55,10 +55,12 @@
   </script>
 </head>
 <body>
-  <p><span id="result">今日の運勢は？</span></p>
+  <div>
+  <p id="result">今日の運勢は？</p>
   <div><span id="koreda"></span></div>
   <div><button id="button" style="width:500px; height:200px" onclick="setColor()">占う</button></div>
   <div><span id="text">ボタンをクリック！</span></div>
+</div>
 </body>
 </head>
 </html>
