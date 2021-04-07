@@ -6,21 +6,21 @@
 @media screen and (max-width: 1279px){
   .box {
     width: 49%;
-    margin: 0.5%;
+    margin: 2px;
   }
 }
 
 @media screen and (min-width: 1280px){
   .box {
-    width: 32%;
-    margin: 0.5%;
+    width: 31%;
+    margin: 1%;
   }
 }
 
 .box{ background-color: #399;}
 
 
-/*.img ,.text{ margin: 10px;}*/
+.img ,.text{ margin: 2px;}*/
 .img {
   text-align: center;
 }
