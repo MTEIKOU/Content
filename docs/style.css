@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 1279px){
   .box {
-    width: 49%;
+    width: 48%;
     margin: 2px;
   }
 }
@@ -20,19 +20,18 @@
 .box{ background-color: #399;}
 
 
-.img ,.text{ margin: 2px;}*/
-.img {
-  text-align: center;
-}
+.img ,.text{ margin: 2px;}
+.img { text-align: center; }
 
 img ,video {
   border: 1px solid white;
   max-height: 480px;
-  max-width:98%;
+  max-width:99%;
 }
 
-.margin{margin:10px; background-color: #9f9;}
+.margin{margin:2px; background-color: #9f9;}
 
+h1,.h3{background-color: #9f9;}
 .pre {white-space: pre-line; font-size:0.8em;}
 .title{font-weight:bold; background-Color:lightblue; color:black; color:#333; font-size: 1.2em;/*-webkit-text-stroke-color: blue; -webkit-text-stroke-width: thick;*/}
 .text{  background-color: lightblue;}
