@@ -29,7 +29,8 @@ img ,video {
   max-width:99%;
 }
 
-.margin{margin:2px; background-color: #9f9;}
+.margin{margin:2px; }
+.green{background-color: #9f9;}
 
 h1,.h3{background-color: #9f9;}
 .pre {white-space: pre-line; font-size:0.8em;}
