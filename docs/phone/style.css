@@ -1,4 +1,5 @@
 th{
+    font-size: large;
     height: 1.5em; /* フォントサイズが1emの場合 */
 }
 
@@ -6,4 +7,4 @@ table {
     margin: 0 auto;
 }
 
-h1{text-align: center}
+h1,h2{text-align: center}
