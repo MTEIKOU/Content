@@ -7,15 +7,39 @@
   <style>
   body{background-color:lightblue;text-align: center;}
   div h1{display: flex;align-items: center;justify-content: center;}
+  /* デスクトップ用のスタイル */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+/* スマートフォン用のスタイル */
+@media screen and (max-width: 480px) {
+  .image-container {
+    display: block;
+  }
+  .image-container img {
+    display: block;
+    margin: 0 auto;
+  }
+}
   </style>
+  <script src="update.js"></script>
 </head>
 
 <body>
-  <div><h1><img src="img/cat_osoi_1.gif" alt="cat"> Yoppyのホームページへようこそ<img src="img/cat_osoi_2.gif" alt="cat"></h1></div>
+  <div ><h1 class="image-container"><img src="img/cat_osoi_1.gif" alt="cat"> Yoppyのホームページへようこそ<img src="img/cat_osoi_2.gif" alt="cat"></h1></div>
   <h1><a href="https://yoppyy.github.io/homepage/works.html">WORKS</a></h1>
   <h1><a href="https://yoppyy.github.io/homepage/arduino.html">Arduino</a></h1>
   <h1><a href="https://yoppyy.github.io/homepage/phone/phone.html">PHONE</a></h1>
   <h1><a href="https://yoppyy.github.io/homepage/omake.html">OMAKE</a></h1>
+
+  <iframe src="update.html" width="600" height="150">
+    インラインフレーム対応ブラウザでご覧いただけます。
+   </iframe>
+  
 </body>
 
 </html>
