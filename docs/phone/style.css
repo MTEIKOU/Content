@@ -1,15 +1,17 @@
+@media screen and (min-width: 768px){
+  .br-sp {display: none; }
+  }
+
 th{
     font-size: large;
-    height: 1.5em; /* フォントサイズが1emの場合 */
+    max-height: 1.5em; /* フォントサイズが1emの場合 */
+    width:auto;
 }
 
 table {
     margin: 0 auto;
     width: 100%;
 }
-
-.left{width:70%;}
-.right{width:30%;}
 
 td:first-child {
     width: 30%;
@@ -22,6 +24,8 @@ td:first-child {
 h1,h2{text-align: center}
 
 img {
-    width: 200px; /* 画像の幅を200ピクセルに設定 */
+    max-width: 200px; /* 画像の幅を200ピクセルに設定 */
     height: auto; /* 高さは自動調整 */
   }
+
+  
