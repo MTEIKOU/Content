@@ -8,6 +8,9 @@ table {
     width: 100%;
 }
 
+.left{width:70%;}
+.right{width:30%;}
+
 td:first-child {
     width: 30%;
   }
